@@ -23,10 +23,12 @@
  - Linear History (i.e. no merge commits). Makes the log considerably more useful.
  - No long lived branches other than master.
 
+---- 
+
 ### Build Tooling
 
 [Difference between recursive & DAG](https://trunkbaseddevelopment.com/monorepos/).
- 
+
 #### Recursive
  
  * Gradle
@@ -38,9 +40,13 @@
  * Bazel
  * Buck
  
+---- 
+
 ### Languages
 
 TBD
+
+---- 
 
 ### Packaging
 
@@ -70,6 +76,8 @@ The following table shows encapsulation for a "standard web service".
 The above table assumes that environment specific configuration will be plugged in via env vars on start up or resolved 
 dynamically by the app on startup.
 
+---- 
+
 ### Testing
 
 * JUnit - Standard Java test framework.
@@ -77,6 +85,7 @@ dynamically by the app on startup.
 * Mockito - Standard stubbing & mocking library.
 * AssertJ - Provides comprehensive assertion support. Excellent alternative to Junit assertions. 
 
+---- 
 
 ### RDBMS
 
@@ -90,14 +99,20 @@ dynamically by the app on startup.
  [This article](https://spring.io/blog/2016/05/31/zero-downtime-deployment-with-a-database) outlines the process of renaming a column in a 
  zero downtime deployment fashion.
 
+---- 
+
 ### Queueing
 
  TBD
 
+---- 
+
 ### CI (build & test)
 
  TBD
- 
+
+---- 
+
 ### Deployment
   
   * Blue/Green
