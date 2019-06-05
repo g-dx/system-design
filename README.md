@@ -12,6 +12,8 @@ TBD
     * CAP Theorem - basics
     * Network - loadbalancing, REST, TCP, UDP
 
+----
+
 ### Source Code Layout
 
 #### Mono-Repository
@@ -99,10 +101,22 @@ dynamically by the app on startup.
 
 ### Testing
 
+#### Frameworks
+
   * JUnit - Standard Java test framework.
   * Spock - Groovy test framework. Very comprehensive support for a number of different testing styles (mocking, stubbing, table driven, etc)
   * Mockito - Standard stubbing & mocking library.
   * AssertJ - Provides comprehensive assertion support. Excellent alternative to Junit assertions. 
+
+#### Database
+
+  * [H2](https://h2database.com/html/main.html) - a fast, in memory database which can be used for unit tests.
+  
+#### Queuing
+
+#### Cloud Integrations
+
+  * [LocalStack](https://localstack.cloud/) - provides testing stubs for key AWS services such as SQS, SNS, etc. Basic edition is free & seems to be available as a JAR on Maven Central [here](https://search.maven.org/artifact/cloud.localstack/localstack-utils/0.1.22/jar). Normal operation is as a Docker container to run locally to aid development & then support easy running in your CI environment to enable testing. This is easy to do in Gitlab CI by using the [`services` key](https://docs.gitlab.com/ee/ci/docker/using_docker_images.html#accessing-the-services)
 
 ---- 
 
