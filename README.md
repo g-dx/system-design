@@ -80,25 +80,30 @@ dynamically by the app on startup.
 
 ### Testing
 
-* JUnit - Standard Java test framework.
-* Spock - Groovy test framework. Very comprehensive support for a number of different testing styles (mocking, stubbing, table driven, etc)
-* Mockito - Standard stubbing & mocking library.
-* AssertJ - Provides comprehensive assertion support. Excellent alternative to Junit assertions. 
+  * JUnit - Standard Java test framework.
+  * Spock - Groovy test framework. Very comprehensive support for a number of different testing styles (mocking, stubbing, table driven, etc)
+  * Mockito - Standard stubbing & mocking library.
+  * AssertJ - Provides comprehensive assertion support. Excellent alternative to Junit assertions. 
 
 ---- 
 
 ### RDBMS
 
- #### Migrations & Refactoring
+#### Migrations & Refactoring
+  
+[How To](https://spring.io/blog/2016/05/31/zero-downtime-deployment-with-a-database) - outlines the process of renaming a column in a zero downtime deployment fashion.
+
+#### Tooling
  
- - Flyway
- - Liquibase
-
-*How To*
-
- [This article](https://spring.io/blog/2016/05/31/zero-downtime-deployment-with-a-database) outlines the process of renaming a column in a 
- zero downtime deployment fashion.
-
+  * Flyway
+  * Liquibase
+ 
+**Flyway**
+ 
+  * [Best Practice](http://dbabullet.com/index.php/2018/03/29/best-practices-using-flyway-for-database-migrations/)
+ 
+**Liquibase**
+  
 ---- 
 
 ### Queueing
@@ -115,5 +120,21 @@ dynamically by the app on startup.
 
 ### Deployment
   
-  * Blue/Green
-  * 
+#### Blue/Green
+
+  * [Best Practices](https://www.blazemeter.com/blog/five-blue-green-deployment-best-practices-for-a-smooth-release) - Interesting article which gives good guidance to ensure smooth releases. Interesting points are:
+ 
+    * Do not use DNS to perform the switch as it is too slow. Use a load balancer instead.
+    * Ensure connections are drained from old env before shutdown.
+    * Perform a rolling update where new servers are mixed in gradually.
+    * If using IaC one the switch is complete & everything is running smoothly simply destroy the old env. Then for the next deployment rebuild it, run smoke tests, perform the load balancer switch, ensure everything is ok & destroy old env. Repeat for every deployment. 
+  * [Single DB](https://techblog.bozho.net/blue-green-deployment/) - outlines working with a single DB under a blue/green deployment model. Advocates a 3 change release model for the DB ensuring backwards compatibility. Suggests uses DNS with a low TTL for the switch.
+
+---- 
+
+### Infrastructure as Code
+
+Interesting tools in this space:
+
+  * [Pulumi](https://www.pulumi.com/) - Very interesting multi-cloud tooling which builds on the actual cloud provider SDKs to support building infrastructure. Commercial use requires £££.
+  * [Terraform](https://www.terraform.io/) - Hashicorp build tooling based on templating in HCL (Hashicorp Configuration Language). It has an Enterprise offerring but I'm unclear on how it actually differs.
