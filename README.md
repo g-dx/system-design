@@ -6,7 +6,7 @@ TBD
 
 ### System Architecture
 
-  * [Comprehensive List](https://github.com/donnemartin/system-design-primer) - A rather large collection of resources on system design. Good general discussion of pros vs. cons. Covers example architectures for AWS, PasteBin, etc while also explaining:
+  * [General Primer](https://github.com/donnemartin/system-design-primer) - A rather large collection of resources on system design. Good general discussion of pros vs. cons. Covers example architectures for AWS, PasteBin, etc while also explaining:
     * Persistence - relational vs. noSQL vs. graph
     * Caching - levels & types
     * CAP Theorem - basics
@@ -59,9 +59,11 @@ TBD
  
 ---- 
 
-### Languages
+### Service Architecture
 
-TBD
+#### Microservices
+
+  * [Microservices & Monorepos](http://blog.shippable.com/ci/cd-of-microservices-using-mono-repos) - explains how to build, test & deploy only services which have changed using the Shippable infrastructure (looks a lot like Gitlab CI files)
 
 ---- 
 
