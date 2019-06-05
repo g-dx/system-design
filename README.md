@@ -20,7 +20,7 @@ TBD
   * [Advantages of Monorepos](https://danluu.com/monorepo/) - arguments for by Dan Luu.
   * [Gitlab Monorepo (11.0)](https://github.com/BastiPaeltz/gitlab-ci-monorepo) - outlines how to build only parts of the a monorepository using some hacks.
   * [Gitlab Monorepo (11.4+)](https://gitlab.com/gitlab-org/gitlab-ce/issues/19232) - supports `changes` key to only run tasks when paths are changed.
-  * [Building Monorepos with Gradle](https://www.javaadvent.com/2018/12/building-monorepo-projects-with-gradle.html)
+  * [Building Monorepos with Gradle](https://www.javaadvent.com/2018/12/building-monorepo-projects-with-gradle.html) - explains how to use `Composite Builds` [\[1\]](https://blog.gradle.org/introducing-composite-builds), [\[2\]](https://docs.gradle.org/current/userguide/composite_builds.html) to only build part of the repository super quickly.
   * [Determining Changes Files In Jenkins](https://stackoverflow.com/questions/6260383/how-to-get-list-of-changed-files-since-last-build-in-jenkins-hudson/9473207#9473207) - a technique for Jenkins to understand which parts of the repository to build.
     
 #### Multiple Repositories
@@ -50,7 +50,6 @@ TBD
 #### Recursive
  
  * Gradle
-   - Composite Builds [\[1\]](https://blog.gradle.org/introducing-composite-builds), [\[2\]](https://docs.gradle.org/current/userguide/composite_builds.html)
  * Maven
  
 #### DAG (Directed Acyclic Graph)
