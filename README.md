@@ -2,12 +2,28 @@
 
 ## Topics
 
+### System Architecture
+
+  * [Comprehensive List](https://github.com/donnemartin/system-design-primer) - A rather large collection of resources on system design. Good general discussion of pros vs. cons. Covers example architectures for AWS, PasteBin, etc while also explaining:
+    * Persistence - relational vs. noSQL vs. graph
+    * Caching - levels & types
+    * CAP Theorem - basics
+    * Network - loadbalancing, REST, TCP, UDP
+
 ### Source Code Layout
 
-  * Mono-Repository
-    - [Building Monorepos with Gradle](https://www.javaadvent.com/2018/12/building-monorepo-projects-with-gradle.html)
-    -
-  * Multiple Repositories
+#### Mono-Repository
+
+  * [Awesome Monorepo](https://github.com/korfuri/awesome-monorepo) - Lots of good information about monorepos, the argument for them & how to work with them.
+  * [Advantages of Monorepos](https://danluu.com/monorepo/) - arguments for by Dan Luu.
+  * [Gitlab Monorepo (11.0)](https://github.com/BastiPaeltz/gitlab-ci-monorepo) - outlines how to build only parts of the a monorepository using some hacks.
+  * [Gitlab Monorepo (11.4+)](https://gitlab.com/gitlab-org/gitlab-ce/issues/19232) - supports `changes` key to only run tasks when paths are changed.
+  * [Building Monorepos with Gradle](https://www.javaadvent.com/2018/12/building-monorepo-projects-with-gradle.html)
+  * [Determining Changes Files In Jenkins](https://stackoverflow.com/questions/6260383/how-to-get-list-of-changed-files-since-last-build-in-jenkins-hudson/9473207#9473207) - a technique for Jenkins to understand which parts of the repository to build.
+    
+#### Multiple Repositories
+
+TBD
 
 ---- 
 
@@ -138,3 +154,7 @@ Interesting tools in this space:
 
   * [Pulumi](https://www.pulumi.com/) - Very interesting multi-cloud tooling which builds on the actual cloud provider SDKs to support building infrastructure. Commercial use requires £££.
   * [Terraform](https://www.terraform.io/) - Hashicorp build tooling based on templating in HCL (Hashicorp Configuration Language). It has an Enterprise offerring but I'm unclear on how it actually differs.
+
+#### Example Usage
+
+ * [Shippable Terraform Code](https://github.com/Shippable/infra) - a repo containing all the infrastructure code for https://www.shippable.com/ (I assume just the website)
