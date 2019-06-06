@@ -161,7 +161,9 @@ TBD
 
 ### CI (build & test)
 
- TBD
+#### Gitlab
+
+  * [Scaling Gitlab CI](http://blog.thehumangeo.com/gitlab-autoscale-runners.html) - interesting article explaining the use of the Runner in Docker Machine mode to support auto-scaling of EC2 instances to meet build demand.
 
 ---- 
 
