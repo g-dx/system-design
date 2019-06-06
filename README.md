@@ -164,6 +164,7 @@ TBD
 #### Gitlab
 
   * [Scaling Gitlab CI](http://blog.thehumangeo.com/gitlab-autoscale-runners.html) - interesting article explaining the use of the Runner in Docker Machine mode to support auto-scaling of EC2 instances to meet build demand.
+  * [AutoScale CI Runners](https://about.gitlab.com/2017/11/23/autoscale-ci-runners/) - similar to the article above explaining how to use the Runner in Docker Machine mode with EC2 spot instances to lower costs.
 
 ---- 
 
