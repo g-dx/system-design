@@ -99,6 +99,12 @@ dynamically by the app on startup.
 
 ---- 
 
+### Releases
+
+TBD
+
+---- 
+
 ### Testing
 
 #### Frameworks
@@ -175,3 +181,9 @@ Interesting tools in this space:
 #### Example Usage
 
  * [Shippable Terraform Code](https://github.com/Shippable/infra) - a repo containing all the infrastructure code for https://www.shippable.com/ (I assume just the website)
+
+----
+
+### Emerging Tools & Best Practice
+
+ * [ThoughtWorks Tech Radar](https://www.thoughtworks.com/radar) - published bi-anually & provides recommendations on whether a language, tool or framework is considered ready for adoption by their consultants.
