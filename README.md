@@ -50,10 +50,18 @@ TBD
 [Difference between recursive & DAG](https://trunkbaseddevelopment.com/monorepos/).
 
 #### Recursive
- 
- * Gradle
- * Maven
- 
+
+##### Gradle
+
+  * [Performance Guide](https://guides.gradle.org/performance/) - covers lots of aspects to improve and maintain performance of builds.
+  * [Incremental Compiler](https://blog.gradle.org/incremental-compiler-avoidance) - article which explains the difference the incremental compiler makes to large repo builds.
+  * **Annotation Processors & Incremental Builds** ([1](https://github.com/gradle/gradle/issues/1320), [2](https://github.com/gradle/gradle/issues/5277)) - details the API support that Gradle provides for annotation processing & libraries which have adopted this.
+  * [Large Multi-Project](https://github.com/gradle/performance-comparisons/tree/master/large-multiproject) - taken from the benchmarking code in the article above.
+
+##### Maven
+
+  TBD 
+  
 #### DAG (Directed Acyclic Graph)
  
  * Bazel
