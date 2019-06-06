@@ -187,3 +187,4 @@ Interesting tools in this space:
 ### Emerging Tools & Best Practice
 
  * [ThoughtWorks Tech Radar](https://www.thoughtworks.com/radar) - published bi-anually & provides recommendations on whether a language, tool or framework is considered ready for adoption by their consultants.
+ * ["Awesome Lists"](https://github.com/sindresorhus/awesome#readme) - a collection of deeper discussions on topics like security, networking & other misc topics.
