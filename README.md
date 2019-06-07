@@ -110,7 +110,7 @@ dynamically by the app on startup.
 
 ### Releases
 
-  * [Continuos Delivery with Maven & Docker](https://phauer.com/2016/version-numbers-continuous-delivery-maven-docker/) - describes a versioning scheme which builds all `master` branch artifacts with a dynamic version of `${commit time}-${commit hash}`. This eliminates the need for managing tags in Git & makes every commit "release ready" by supporting a unique identifier.
+  * [Continuous Delivery with Maven & Docker](https://phauer.com/2016/version-numbers-continuous-delivery-maven-docker/) - describes a versioning scheme which builds all `master` branch artifacts with a dynamic version of `${commit time}-${commit hash}`. This eliminates the need for managing tags in Git & makes every commit "release ready" by supporting a unique identifier.
   * [Maven Release Plugin: Dead & Buried](https://axelfontaine.com/blog/dead-burried.html) - final article in a series which highlights the problems of attempting to do continuous delivery with Maven builds. It highlights v3.2.1 of the `maven` which allows the `pom.xml` version number to be set by a property defined on the commandline, e.g `mvn deplog -DVERSION=$BUILD_NUMBER`. This in conjunction with pushing a new git tag with the `VERSION` number means running the release plugin is not necessary at all.
 
 ---- 
