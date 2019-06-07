@@ -110,7 +110,8 @@ dynamically by the app on startup.
 
 ### Releases
 
-TBD
+  * [Continuos Delivery with Maven & Docker](https://phauer.com/2016/version-numbers-continuous-delivery-maven-docker/) - describes a versioning scheme which builds all `master` branch artifacts with a dynamic version of `${commit time}-${commit hash}`. This eliminates the need for managing tags in Git & makes every commit "release ready" by supporting a unique identifier.
+  * [Maven Release Plugin: Dead & Buried](https://axelfontaine.com/blog/dead-burried.html) - final article in a series which highlights the problems of attempting to do continuous delivery with Maven builds. It highlights v3.2.1 of the `maven` which allows the `pom.xml` version number to be set by a property defined on the commandline, e.g `mvn deplog -DVERSION=$BUILD_NUMBER`. This in conjunction with pushing a new git tag with the `VERSION` number means running the release plugin is not necessary at all.
 
 ---- 
 
@@ -165,8 +166,11 @@ TBD
 
 ---- 
 
-### CI (build & test)
+### CI/CD (Continous Integration/Delivery/Deployment)
 
+ * [Continuous Integration, Delivery, and Deployment with GitLab](https://about.gitlab.com/2016/08/05/continuous-integration-delivery-and-deployment-with-gitlab/) - describes the differences between the 3 terms & gives a good overview of how Gitlab CI can address these.
+ * [Anatomy of a Delivery Pipeline](http://www.informit.com/articles/article.aspx?p=1621865&seqNum=1) - a chapter from a book on continuous delivery which describes the general benefits, principals & general outline of a continuous delivery pipeline. There are good descriptions of what should happen at each stage.
+ 
 #### Gitlab
 
   * [Scaling Gitlab CI](http://blog.thehumangeo.com/gitlab-autoscale-runners.html) - interesting article explaining the use of the Runner in Docker Machine mode to support auto-scaling of EC2 instances to meet build demand.
