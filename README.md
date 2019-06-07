@@ -119,7 +119,7 @@ dynamically by the app on startup.
 
 #### e2e
 
-  * [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html) - describes the basic pyramid, cautions its inversion (the icecream cone) generals makes a case against writing _many_ e2e tests due to brittleness, determinisim & maintainability.
+  * [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html) - describes the basic pyramid, cautions its inversion (the icecream cone) generally makes a case _against_ writing many e2e tests due to brittleness, determinisim & maintainability.
   * [Making End-to-End Tests Work](https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/) - describes e2e acceptance tests for the LMAX trading platform & their importance. Also has a number of excellent linked articles on [test isolation](https://www.symphonious.net/2014/04/12/testinglmax-test-isolation/), [test result storage](https://www.symphonious.net/2014/03/25/testinglmax-test-results-database/) & [control of time during tests](https://www.symphonious.net/2014/04/01/testinglmax-time-travel-and-the-tardis/).
 
 #### Frameworks
@@ -145,7 +145,7 @@ dynamically by the app on startup.
 
 #### Migrations & Refactoring
   
-[How To](https://spring.io/blog/2016/05/31/zero-downtime-deployment-with-a-database) - outlines the process of renaming a column in a zero downtime deployment fashion.
+[Zero Downtime Deployment With a Database](https://spring.io/blog/2016/05/31/zero-downtime-deployment-with-a-database) - describes the process of renaming a column in a zero downtime deployment fashion by splitting the work across multiple releases & deployments.
 
 #### Tooling
  
@@ -154,7 +154,7 @@ dynamically by the app on startup.
  
 **Flyway**
  
-  * [Best Practice](http://dbabullet.com/index.php/2018/03/29/best-practices-using-flyway-for-database-migrations/)
+  * [Best Practice for Database Migrations](http://dbabullet.com/index.php/2018/03/29/best-practices-using-flyway-for-database-migrations/)
  
 **Liquibase**
   
@@ -182,19 +182,18 @@ dynamically by the app on startup.
   
 #### Blue/Green
 
-  * [Best Practices](https://www.blazemeter.com/blog/five-blue-green-deployment-best-practices-for-a-smooth-release) - Interesting article which gives good guidance to ensure smooth releases. Interesting points are:
+  * [Best Practices for Smooth Releases](https://www.blazemeter.com/blog/five-blue-green-deployment-best-practices-for-a-smooth-release) - Interesting article which gives good guidance to ensure smooth releases. Interesting points are:
  
     * Do not use DNS to perform the switch as it is too slow. Use a load balancer instead.
     * Ensure connections are drained from old env before shutdown.
     * Perform a rolling update where new servers are mixed in gradually.
     * If using IaC one the switch is complete & everything is running smoothly simply destroy the old env. Then for the next deployment rebuild it, run smoke tests, perform the load balancer switch, ensure everything is ok & destroy old env. Repeat for every deployment. 
-  * [Single DB](https://techblog.bozho.net/blue-green-deployment/) - outlines working with a single DB under a blue/green deployment model. Advocates a 3 change release model for the DB ensuring backwards compatibility. Suggests uses DNS with a low TTL for the switch.
+  * [Blue/Green Deployement With a Single Underlying Database](https://techblog.bozho.net/blue-green-deployment/) - outlines working with a single DB under a blue/green deployment model. Advocates a 3 change release model for the DB ensuring backwards compatibility. Suggests uses DNS with a low TTL for the switch.
 
 ---- 
 ### Networking
 
   * [AWS Single VPC Design](https://aws.amazon.com/answers/networking/aws-single-vpc-design/) - describes general best practice for network design inside a VPC on AWS.
-  
 
 ---- 
 
