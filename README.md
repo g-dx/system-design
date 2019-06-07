@@ -214,3 +214,9 @@ Interesting tools in this space:
 
  * [ThoughtWorks Tech Radar](https://www.thoughtworks.com/radar) - published bi-anually & provides recommendations on whether a language, tool or framework is considered ready for adoption by their consultants.
  * ["Awesome Lists"](https://github.com/sindresorhus/awesome#readme) - a collection of deeper discussions on topics like security, networking & other misc topics.
+
+----
+
+### Misc
+
+  * [http4K](https://www.http4k.org/) - a pure Kotlin library for making & receiving HTTP traffic. Aims to be highly testable & it contains only 2 primitives: the `handler` & `filter`
