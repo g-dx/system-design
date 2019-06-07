@@ -57,6 +57,7 @@ TBD
   * [Incremental Compiler](https://blog.gradle.org/incremental-compiler-avoidance) - article which explains the difference the incremental compiler makes to large repo builds.
   * **Annotation Processors & Incremental Builds** ([1](https://github.com/gradle/gradle/issues/1320), [2](https://github.com/gradle/gradle/issues/5277)) - details the API support that Gradle provides for annotation processing & libraries which have adopted this.
   * [Large Multi-Project](https://github.com/gradle/performance-comparisons/tree/master/large-multiproject) - taken from the benchmarking code in the article above.
+  * [Build Cache](https://docs.gradle.org/current/userguide/build_cache.html) - describes the build cache architecture (local & remote) & how to configure & debug tasks.
 
 ##### Maven
 
@@ -114,6 +115,11 @@ TBD
 ---- 
 
 ### Testing
+
+#### e2e
+
+  * [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html) - describes the basic pyramid, cautions its inversion (the icecream cone) generals makes a case against writing _many_ e2e tests due to brittleness, determinisim & maintainability.
+  * [Making End-to-End Tests Work](https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/) - describes e2e acceptance tests for the LMAX trading platform & their importance. Also has a number of excellent linked articles on [test isolation](https://www.symphonious.net/2014/04/12/testinglmax-test-isolation/), [test result storage](https://www.symphonious.net/2014/03/25/testinglmax-test-results-database/) & [control of time during tests](https://www.symphonious.net/2014/04/01/testinglmax-time-travel-and-the-tardis/).
 
 #### Frameworks
 
@@ -179,6 +185,12 @@ TBD
     * Perform a rolling update where new servers are mixed in gradually.
     * If using IaC one the switch is complete & everything is running smoothly simply destroy the old env. Then for the next deployment rebuild it, run smoke tests, perform the load balancer switch, ensure everything is ok & destroy old env. Repeat for every deployment. 
   * [Single DB](https://techblog.bozho.net/blue-green-deployment/) - outlines working with a single DB under a blue/green deployment model. Advocates a 3 change release model for the DB ensuring backwards compatibility. Suggests uses DNS with a low TTL for the switch.
+
+---- 
+### Networking
+
+  * [AWS Single VPC Design](https://aws.amazon.com/answers/networking/aws-single-vpc-design/) - describes general best practice for network design inside a VPC on AWS.
+  
 
 ---- 
 
