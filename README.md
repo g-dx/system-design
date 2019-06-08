@@ -205,6 +205,12 @@ Interesting tools in this space:
 
   * [Pulumi](https://www.pulumi.com/) - Very interesting multi-cloud tooling which builds on the actual cloud provider SDKs to support building infrastructure. Commercial use requires £££.
   * [Terraform](https://www.terraform.io/) - Hashicorp build tooling based on templating in HCL (Hashicorp Configuration Language). It has an Enterprise offerring but I'm unclear on how it actually differs.
+  
+#### Testing
+
+  * [Top 3 Terraform Testing Strategies](https://www.contino.io/insights/top-3-terraform-testing-strategies-for-ultra-reliable-infrastructure-as-code) - describes 3 approaches to testing IaC, basically, manual review of Terraform plan, integration test via Inspec (see below) or unit test via [RSpec](https://relishapp.com/rspec/) (I suspect the author comes from a Chef background).
+  * [Terratest](https://github.com/gruntwork-io/terratest) - a library to write tests for Terraform configuration. It does this by actually creating all resources on smaller instances, running tests & then destroying everything. Tests are written in Go. [This article introduces it](https://blog.gruntwork.io/open-sourcing-terratest-a-swiss-army-knife-for-testing-infrastructure-code-5d883336fcd5) and explains some of the issues IaC teams have without tests.
+  * [Kitchen-Terraform](https://github.com/newcontext-oss/kitchen-terraform) - a set of Kitchen plugins to allow writing InSpec tests for infrastructure.
 
 #### Example Usage
 
