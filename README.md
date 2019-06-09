@@ -58,6 +58,7 @@ TBD
   * **Annotation Processors & Incremental Builds** ([1](https://github.com/gradle/gradle/issues/1320), [2](https://github.com/gradle/gradle/issues/5277)) - details the API support that Gradle provides for annotation processing & libraries which have adopted this.
   * [Large Multi-Project](https://github.com/gradle/performance-comparisons/tree/master/large-multiproject) - taken from the benchmarking code in the article above.
   * [Build Cache](https://docs.gradle.org/current/userguide/build_cache.html) - describes the build cache architecture (local & remote) & how to configure & debug tasks.
+  * [Making Your Gradle Tasks Incremental](https://medium.com/@vanniktech/making-your-gradle-tasks-incremental-7f26e4ef09c3) - describes how to configure Gradle tasks such that they participate in incremental build calculations so that they do not run when there is no work to do.
 
 ##### Maven
 
@@ -76,6 +77,16 @@ TBD
 
   * [Microservices & Monorepos](http://blog.shippable.com/ci/cd-of-microservices-using-mono-repos) - explains how to build, test & deploy only services which have changed using the Shippable infrastructure (looks a lot like Gitlab CI files)
 
+----
+
+### Development Process
+
+
+#### Tooling
+
+  * [ktlint](https://github.com/pinterest/ktlint) - a Kotlin linter in the spirit of gofmt to ensure code consistency. Supports a range of execution models; CI, Maven/Gradle or even Intellij.
+  * [detekt](https://github.com/arturbosch/detekt) - static code analysis for Kotlin.
+  * [CheckStyle](http://checkstyle.sourceforge.net/) - a Java library for enforcing a coding standard. [Gradle supports this natively](https://docs.gradle.org/current/userguide/checkstyle_plugin.html).
 ---- 
 
 ### Packaging
