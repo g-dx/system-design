@@ -11,6 +11,7 @@ TBD
     * Caching - levels & types
     * CAP Theorem - basics
     * Network - loadbalancing, REST, TCP, UDP
+  * [Feature Toggles](https://www.martinfowler.com/articles/feature-toggles.html) - describes various approaches to introducing and maintaining feature flagging in a codebase. Good discussion of the negative aspects (complexity, extra testing, rot, etc) as well as the positives.
 
 ----
 
@@ -24,6 +25,7 @@ TBD
   * [Gitlab Monorepo (11.4+)](https://gitlab.com/gitlab-org/gitlab-ce/issues/19232) - supports `changes` key to only run tasks when paths are changed.
   * [Building Monorepos with Gradle](https://www.javaadvent.com/2018/12/building-monorepo-projects-with-gradle.html) - explains how to use `Composite Builds` [\[1\]](https://blog.gradle.org/introducing-composite-builds), [\[2\]](https://docs.gradle.org/current/userguide/composite_builds.html) to only build part of the repository super quickly.
   * [Determining Changes Files In Jenkins](https://stackoverflow.com/questions/6260383/how-to-get-list-of-changed-files-since-last-build-in-jenkins-hudson/9473207#9473207) - a technique for Jenkins to understand which parts of the repository to build.
+  * [Monorepos with Recursive or DAG Build Technologies](https://paulhammant.com/2017/03/28/monorepos-with-recursive-or-dag-build-techs/) - describes the advantages/disadvantages of using a recursive or DAG build tool in a monorepo.
     
 #### Multiple Repositories
 
@@ -239,3 +241,4 @@ Interesting tools in this space:
 ### Misc
 
   * [http4K](https://www.http4k.org/) - a pure Kotlin library for making & receiving HTTP traffic. Aims to be highly testable & it contains only 2 primitives: the `handler` & `filter`
+  * Spring Boot Startup Articles - [this SO link](https://stackoverflow.com/questions/27230702/speed-up-spring-boot-startup-time) describes various techniques for improving startup. [This Spring blog post](https://spring.io/blog/2019/03/14/lazy-initialization-in-spring-boot-2-2) introduces lazy loading as a way to improve startup times.
