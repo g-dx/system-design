@@ -140,7 +140,8 @@ dynamically by the app on startup.
   * [JUnit](https://junit.org/junit5/) - Standard Java test framework.
   * [Spock](http://spockframework.org/) - Groovy test framework. Very comprehensive support for a number of different testing styles (mocking, stubbing, table driven, etc)
   * [Mockito](https://site.mockito.org/) - Standard stubbing & mocking library.
-  * [AssertJ](http://joel-costigliola.github.io/assertj/) - Provides comprehensive assertion support. Excellent alternative to Junit assertions. 
+  * [AssertJ](http://joel-costigliola.github.io/assertj/) - Provides comprehensive assertion support. Excellent alternative to Junit assertions.
+* [PiTest](http://pitest.org/) - Mutation testing framework for Java.                                                                       
 
 #### Database
 
