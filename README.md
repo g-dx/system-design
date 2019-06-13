@@ -182,6 +182,8 @@ dynamically by the app on startup.
 
 ### CI/CD (Continous Integration/Delivery/Deployment)
 
+ * [Architecting for Continuous Delivery](https://www.thoughtworks.com/insights/blog/architecting-continuous-delivery) - describes what's required across the SDLC to achieve CD. Promotes a multi-repo approach to libraries & services to keep build & test times small.
+ * [Etsy, CD & Monolithic Applications](https://speakerdeck.com/mrtazz/development-deployment-and-collaboration-at-etsy) - describes how Etsy manages to do > 50 production deployments a day with a single application.
  * [Continuous Integration, Delivery, and Deployment with GitLab](https://about.gitlab.com/2016/08/05/continuous-integration-delivery-and-deployment-with-gitlab/) - describes the differences between the 3 terms & gives a good overview of how Gitlab CI can address these.
  * [Anatomy of a Delivery Pipeline](http://www.informit.com/articles/article.aspx?p=1621865&seqNum=1) - a chapter from a book on continuous delivery which describes the general benefits, principals & general outline of a continuous delivery pipeline. There are good descriptions of what should happen at each stage.
  
@@ -243,3 +245,4 @@ Interesting tools in this space:
 
   * [http4K](https://www.http4k.org/) - a pure Kotlin library for making & receiving HTTP traffic. Aims to be highly testable & it contains only 2 primitives: the `handler` & `filter`
   * Spring Boot Startup Articles - [this SO link](https://stackoverflow.com/questions/27230702/speed-up-spring-boot-startup-time) describes various techniques for improving startup. [This Spring blog post](https://spring.io/blog/2019/03/14/lazy-initialization-in-spring-boot-2-2) introduces lazy loading as a way to improve startup times.
+  * [AWS Costs Every Developer Should Know](https://david-codes.hatanian.com/2019/06/09/aws-costs-every-programmer-should-now.html) - describes "current" EU West 1 region EC2 pricing for CPU & RAM.
