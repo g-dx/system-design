@@ -175,6 +175,11 @@ dynamically by the app on startup.
 #### Scaling
 
   * [AWS RDS Multi-AZ Read Replicas](https://www.whizlabs.com/blog/aws-rds-multi-az-read-replica/) - describes how to use an AWS RDS secondary instance (held in a separate AZ) as a read replica. Also see [here](https://aws.amazon.com/rds/details/read-replicas/).
+  * [How to Build an Active-Active PostgreSQL Cluster](https://info.crunchydata.com/blog/a-guide-to-building-an-active-active-postgresql-cluster) - describes how to build an "Active-Active" cluster using [SymmetricDS](https://www.symmetricds.org/).
+  * [How Your PostgreSQL Data Model Affects Storage](https://info.crunchydata.com/blog/how-your-postgresql-data-model-affects-storage) - describes various ways to represent sensor data & the storage used. In the words of the article:
+  
+  > Well imagine if your projections for your initial data model, ingest rate, and data retention requirements suggest that you may need to scale up to say, 100 TB of storage, you might just want to explore your options for reducing your requirements.
+  
 ---- 
 
 ### Queueing
