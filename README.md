@@ -171,7 +171,10 @@ dynamically by the app on startup.
   * [Best Practice for Database Migrations](http://dbabullet.com/index.php/2018/03/29/best-practices-using-flyway-for-database-migrations/)
  
 **Liquibase**
-  
+
+#### Scaling
+
+  * [AWS RDS Multi-AZ Read Replicas](https://www.whizlabs.com/blog/aws-rds-multi-az-read-replica/) - describes how to use an AWS RDS secondary instance (held in a separate AZ) as a read replica. Also see [here](https://aws.amazon.com/rds/details/read-replicas/).
 ---- 
 
 ### Queueing
