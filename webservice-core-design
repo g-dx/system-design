@@ -1,0 +1,40 @@
+# Webservice Core Design
+
+## Transactions
+
+  * Spring Transaction Annotation Support - easy to use but requires one of the following:
+    -- JDK proxies. (if service layer uses an interface)
+    -- Dynamic subclassing using cglib. (if service layer does not implement interface)
+    -- AoT class generation using AspectJ to weave transactional semantics around service layer code.
+
+[This article](https://spring.io/blog/2012/05/23/transactions-caching-and-aop-understanding-proxy-usage-in-spring) explains the situation well.
+
+## Tracing
+
+  * [OpenTracing](https://opentracing.io/)
+  * [JaegerTracing](https://www.jaegertracing.io/) - implements the OpenTracing APIs
+
+## Logging
+
+  SLF4J API with a logback implementation.
+
+## Performance
+
+A list of areas for consideration in no particular order.
+
+### Spring
+
+  * Disable unwanted `@AutoConfiguration` classes.
+
+### HTTP
+
+  * Connection pooling - important for frequent HTTP requests to other services. The JVM supports this natively but with a very short timeout & only a few connections per host.
+  * DNS caching - important if frequently contacted services are accessed by hostname rather than IP address.
+  
+### JDBC
+
+  * Connection pooling - always important, [Hikari](https://brettwooldridge.github.io/HikariCP/) is the obvious choice here.
+  
+### Caching
+
+  * Spring supports this via the `@Cachable` annotation with flexible key definition
