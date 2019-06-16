@@ -254,3 +254,4 @@ Interesting tools in this space:
   * [http4K](https://www.http4k.org/) - a pure Kotlin library for making & receiving HTTP traffic. Aims to be highly testable & it contains only 2 primitives: the `handler` & `filter`
   * Spring Boot Startup Articles - [this SO link](https://stackoverflow.com/questions/27230702/speed-up-spring-boot-startup-time) describes various techniques for improving startup. [This Spring blog post](https://spring.io/blog/2019/03/14/lazy-initialization-in-spring-boot-2-2) introduces lazy loading as a way to improve startup times.
   * [AWS Costs Every Developer Should Know](https://david-codes.hatanian.com/2019/06/09/aws-costs-every-programmer-should-now.html) - describes "current" EU West 1 region EC2 pricing for CPU & RAM.
+  * [Spring Framework Annotations](https://springframework.guru/spring-framework-annotations/) - a good list of most (?) annotations & what they do.
