@@ -134,6 +134,7 @@ dynamically by the app on startup.
 
   * [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html) - describes the basic pyramid, cautions its inversion (the icecream cone) generally makes a case _against_ writing many e2e tests due to brittleness, determinisim & maintainability.
   * [Making End-to-End Tests Work](https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/) - describes e2e acceptance tests for the LMAX trading platform & their importance. Also has a number of excellent linked articles on [test isolation](https://www.symphonious.net/2014/04/12/testinglmax-test-isolation/), [test result storage](https://www.symphonious.net/2014/03/25/testinglmax-test-results-database/) & [control of time during tests](https://www.symphonious.net/2014/04/01/testinglmax-time-travel-and-the-tardis/).
+  * [Cypress](https://www.cypress.io/) - interesting QA framework which is intended to replace Selenium by running the tests in the browser with the application itself, is designed to support CI integration & is free for 3 users.
 
 #### Frameworks
 
