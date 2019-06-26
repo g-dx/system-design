@@ -196,6 +196,7 @@ dynamically by the app on startup.
  * [Continuous Integration, Delivery, and Deployment with GitLab](https://about.gitlab.com/2016/08/05/continuous-integration-delivery-and-deployment-with-gitlab/) - describes the differences between the 3 terms & gives a good overview of how Gitlab CI can address these.
  * [Anatomy of a Delivery Pipeline](http://www.informit.com/articles/article.aspx?p=1621865&seqNum=1) - a chapter from a book on continuous delivery which describes the general benefits, principals & general outline of a continuous delivery pipeline. There are good descriptions of what should happen at each stage.
  * [About Infrastructure on AWS, Automated with Terraform, Ansible and GitLab CI](https://medium.com/@robinflume/about-infrastructure-on-aws-automated-with-terraform-ansible-and-gitlab-ci-5888fe2e85fc) - describes how to use 4 tools (Gitlab CI, Terraform, Ansible & AWS) to automate the creation of EC2 instances with Terraform & Ansible provisioning.
+ * [Gitlab+SpringBoot+S3 Example](https://github.com/benoutram/springboot-s3-example) & [Terraform+AWS+VPC Example](https://github.com/benoutram/terraform-aws-vpc-example) - both projects are designed to be used together to execute a pipeline which builds a small Gradle project into a JAR, checks it & uploads it to an S3 bucket using the AWS CLI. Terraform will then use artifacts in this bucket during provisioning.
  
 #### Gitlab
 
