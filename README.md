@@ -189,12 +189,13 @@ dynamically by the app on startup.
 
 ---- 
 
-### CI/CD (Continous Integration/Delivery/Deployment)
+### CI/CD (Continuous Integration/Delivery/Deployment)
 
  * [Architecting for Continuous Delivery](https://www.thoughtworks.com/insights/blog/architecting-continuous-delivery) - describes what's required across the SDLC to achieve CD. Promotes a multi-repo approach to libraries & services to keep build & test times small.
  * [Etsy, CD & Monolithic Applications](https://speakerdeck.com/mrtazz/development-deployment-and-collaboration-at-etsy) - describes how Etsy manages to do > 50 production deployments a day with a single application.
  * [Continuous Integration, Delivery, and Deployment with GitLab](https://about.gitlab.com/2016/08/05/continuous-integration-delivery-and-deployment-with-gitlab/) - describes the differences between the 3 terms & gives a good overview of how Gitlab CI can address these.
  * [Anatomy of a Delivery Pipeline](http://www.informit.com/articles/article.aspx?p=1621865&seqNum=1) - a chapter from a book on continuous delivery which describes the general benefits, principals & general outline of a continuous delivery pipeline. There are good descriptions of what should happen at each stage.
+ * [About Infrastructure on AWS, Automated with Terraform, Ansible and GitLab CI](https://medium.com/@robinflume/about-infrastructure-on-aws-automated-with-terraform-ansible-and-gitlab-ci-5888fe2e85fc) - describes how to use 4 tools (Gitlab CI, Terraform, Ansible & AWS) to automate the creation of EC2 instances with Terraform & Ansible provisioning.
  
 #### Gitlab
 
