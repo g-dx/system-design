@@ -219,7 +219,7 @@ dynamically by the app on startup.
     * Perform a rolling update where new servers are mixed in gradually.
     * If using IaC one the switch is complete & everything is running smoothly simply destroy the old env. Then for the next deployment rebuild it, run smoke tests, perform the load balancer switch, ensure everything is ok & destroy old env. Repeat for every deployment. 
   * [Blue/Green Deployement With a Single Underlying Database](https://techblog.bozho.net/blue-green-deployment/) - outlines working with a single DB under a blue/green deployment model. Advocates a 3 change release model for the DB ensuring backwards compatibility. Suggests uses DNS with a low TTL for the switch.
-
+  * [Blue/Green Deployment With an AWS Application Load Balancer](https://medium.com/@acharya.naveen/blue-green-deployment-with-aws-application-load-balancer-e551cd00d2c9) - describes how to implement blue/green deployment by forwarding traffic to blue or green target group based on the `Host` header value (i.e. `live.poc.com` or `staging.poc.com`). 
 ---- 
 ### Networking
 
