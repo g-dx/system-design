@@ -119,6 +119,8 @@ The following table shows encapsulation for a "standard web service".
 The above table assumes that environment specific configuration will be plugged in via env vars on start up or resolved 
 dynamically by the app on startup.
 
+ * [Spring-Boot+JLink Example](https://gist.github.com/pgilad/f5218c808e6007cbf553164a60dca89e) - describes how to build a self-contained Spring Boot application using JLink.
+
 ---- 
 
 ### Releases
