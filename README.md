@@ -226,6 +226,7 @@ dynamically by the app on startup.
   * [Introduction to Modern Network Load Balancing and Proxying](https://blog.envoyproxy.io/introduction-to-modern-network-load-balancing-and-proxying-a57f6ff80236) - describes how L4 & L7 loadbalancers works & standard features. Also explains typically topologies such as middle (Nginx, HAProxy, Apache), edge (Traefik, HAProxy, Caddy, Envoy, etc), client library (Finagle, Hystrix) & side car (a.k.a "service mesh") 
   * [Application Proxy/Gateway Comparison](https://gist.github.com/StevenACoffman/acf1133da6c5ff5226c0f6eb8fbd8132) - a ranking of various opensource solutions by Github stars (!)
   * [AWS Single VPC Design](https://aws.amazon.com/answers/networking/aws-single-vpc-design/) - describes general best practice for network design inside a VPC on AWS.
+  * [IPv4, CIDR & Amazon VPCs in a Nutshell](https://treyperry.com/2015/06/22/ipv4-cidr-vpc-in-a-nutshell/) - describes the theory of networks, subnets, CIDR, etc. Also contains a worked example of configuring a VPC in AWS.
 
 ---- 
 
