@@ -229,6 +229,7 @@ dynamically by the app on startup.
   * [AWS Single VPC Design](https://aws.amazon.com/answers/networking/aws-single-vpc-design/) - describes general best practice for network design inside a VPC on AWS.
   * [IPv4, CIDR & Amazon VPCs in a Nutshell](https://treyperry.com/2015/06/22/ipv4-cidr-vpc-in-a-nutshell/) - describes the theory of networks, subnets, CIDR, etc. Also contains a worked example of configuring a VPC in AWS.
   * [Elastic Load Balancing](https://digitalcloud.training/certification-training/aws-solutions-architect-associate/compute/elastic-load-balancing/) - describes the 3 types of loadbalancer available in AWS, features & restrictions.
+  * [Elastic Container Service Cluster & ALB](https://dinfratechsource.com/2019/01/20/deploying-applications-with-aws-ecs-cluster-alb-and-auto-scaling-group/) - describes how to use ECS to launch multiple copies of a container behind an ALB.
 
 ---- 
 
