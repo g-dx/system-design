@@ -206,6 +206,7 @@ dynamically by the app on startup.
   * [Scaling Gitlab CI](http://blog.thehumangeo.com/gitlab-autoscale-runners.html) - interesting article explaining the use of the Runner in Docker Machine mode to support auto-scaling of EC2 instances to meet build demand.
   * [AutoScale CI Runners](https://about.gitlab.com/2017/11/23/autoscale-ci-runners/) - similar to the article above explaining how to use the Runner in Docker Machine mode with EC2 spot instances to lower costs.
   * [GitLab CI: Deployment & Environments](https://about.gitlab.com/2016/08/26/ci-deployment-and-environments/) - describes how to use Gitlab to perform deployments into various environments. It also discusses how to scale the approach as teams get bigger.
+  * [Build Docker images with GitLab CI on AWS ECR](http://www.jademind.com/blog/posts/build-docker-images-with-gitlab-ci-on-aws-ecr/) - 
 
 ---- 
 
@@ -229,7 +230,6 @@ dynamically by the app on startup.
   * [AWS Single VPC Design](https://aws.amazon.com/answers/networking/aws-single-vpc-design/) - describes general best practice for network design inside a VPC on AWS.
   * [IPv4, CIDR & Amazon VPCs in a Nutshell](https://treyperry.com/2015/06/22/ipv4-cidr-vpc-in-a-nutshell/) - describes the theory of networks, subnets, CIDR, etc. Also contains a worked example of configuring a VPC in AWS.
   * [Elastic Load Balancing](https://digitalcloud.training/certification-training/aws-solutions-architect-associate/compute/elastic-load-balancing/) - describes the 3 types of loadbalancer available in AWS, features & restrictions.
-  * [Elastic Container Service Cluster & ALB](https://dinfratechsource.com/2019/01/20/deploying-applications-with-aws-ecs-cluster-alb-and-auto-scaling-group/) - describes how to use ECS to launch multiple copies of a container behind an ALB.
 
 ---- 
 
@@ -240,13 +240,18 @@ Interesting tools in this space:
   * [Pulumi](https://www.pulumi.com/) - Very interesting multi-cloud tooling which builds on the actual cloud provider SDKs to support building infrastructure. Commercial use requires £££.
   * [Terraform](https://www.terraform.io/) - Hashicorp build tooling based on templating in HCL (Hashicorp Configuration Language). It has an Enterprise offerring but I'm unclear on how it actually differs.
   
-#### Testing
+#### Terraform
+
+  * [Deploying applications with AWS ECS Cluster and ALB](https://dinfratechsource.com/2019/01/20/deploying-applications-with-aws-ecs-cluster-alb-and-auto-scaling-group/) - describes how to use ECS to launch multiple copies of a container behind an ALB.
+  * [How to Deploy from GitLab to AWS Fargate ](https://webcaptioner.com/blog/2017/12/deploy-from-gitlab-to-aws-fargate/) - describes how to deploy containers on to AWS Fargate using Gitlab CI.
+
+##### Testing
 
   * [Top 3 Terraform Testing Strategies](https://www.contino.io/insights/top-3-terraform-testing-strategies-for-ultra-reliable-infrastructure-as-code) - describes 3 approaches to testing IaC, basically, manual review of Terraform plan, integration test via Inspec (see below) or unit test via [RSpec](https://relishapp.com/rspec/) (I suspect the author comes from a Chef background).
   * [Terratest](https://github.com/gruntwork-io/terratest) - a library to write tests for Terraform configuration. It does this by actually creating all resources on smaller instances, running tests & then destroying everything. Tests are written in Go. [This article introduces it](https://blog.gruntwork.io/open-sourcing-terratest-a-swiss-army-knife-for-testing-infrastructure-code-5d883336fcd5) and explains some of the issues IaC teams have without tests.
   * [Kitchen-Terraform](https://github.com/newcontext-oss/kitchen-terraform) - a set of Kitchen plugins to allow writing InSpec tests for infrastructure.
 
-#### Example Usage
+##### Example Usage
 
  * [Shippable Terraform Code](https://github.com/Shippable/infra) - a repo containing all the infrastructure code for https://www.shippable.com/ (I assume just the website)
 
@@ -265,3 +270,4 @@ Interesting tools in this space:
   * Spring Boot Startup Articles - [this SO link](https://stackoverflow.com/questions/27230702/speed-up-spring-boot-startup-time) describes various techniques for improving startup. [This Spring blog post](https://spring.io/blog/2019/03/14/lazy-initialization-in-spring-boot-2-2) introduces lazy loading as a way to improve startup times.
   * [AWS Costs Every Developer Should Know](https://david-codes.hatanian.com/2019/06/09/aws-costs-every-programmer-should-now.html) - describes "current" EU West 1 region EC2 pricing for CPU & RAM.
   * [Spring Framework Annotations](https://springframework.guru/spring-framework-annotations/) - a good list of most (?) annotations & what they do.
+  * [Builder pattern vs. Multi-stage builds in Docker](https://blog.alexellis.io/mutli-stage-docker-builds/) - describes how to work with multi-stage builds & the problems they solve.
