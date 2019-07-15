@@ -242,6 +242,7 @@ Interesting tools in this space:
   
 #### Terraform
 
+  * Comphrensive Guide to Terraform ([1](https://blog.gruntwork.io/why-we-use-terraform-and-not-chef-puppet-ansible-saltstack-or-cloudformation-7989dad2865c), [2](https://blog.gruntwork.io/an-introduction-to-terraform-f17df9c6d180), [3](https://blog.gruntwork.io/how-to-manage-terraform-state-28f5697e68fa), [4](https://blog.gruntwork.io/how-to-create-reusable-infrastructure-with-terraform-modules-25526d65f73d), [5](https://blog.gruntwork.io/terraform-tips-tricks-loops-if-statements-and-gotchas-f739bbae55f9), [6](https://blog.gruntwork.io/how-to-use-terraform-as-a-team-251bc1104973)) - series of articles describing why to choose Terraform through to team management.
   * [Deploying applications with AWS ECS Cluster and ALB](https://dinfratechsource.com/2019/01/20/deploying-applications-with-aws-ecs-cluster-alb-and-auto-scaling-group/) - describes how to use ECS to launch multiple copies of a container behind an ALB.
   * [How to Deploy from GitLab to AWS Fargate](https://webcaptioner.com/blog/2017/12/deploy-from-gitlab-to-aws-fargate/) - describes how to deploy containers on to AWS Fargate using Gitlab CI.
   * [Terraform Collaboration For Everyone](https://www.hashicorp.com/blog/terraform-collaboration-for-everyone) - announces the intention to bring team collaboration features to the free tier ([roadmap is here](https://app.terraform.io/signup?utm_source=blog&utm_campaign=intro_tf_cloud_remote))
