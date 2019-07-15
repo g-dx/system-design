@@ -208,7 +208,7 @@ dynamically by the app on startup.
   * [GitLab CI: Deployment & Environments](https://about.gitlab.com/2016/08/26/ci-deployment-and-environments/) - describes how to use Gitlab to perform deployments into various environments. It also discusses how to scale the approach as teams get bigger.
   * [Build Docker images with GitLab CI on AWS ECR](http://www.jademind.com/blog/posts/build-docker-images-with-gitlab-ci-on-aws-ecr/) - 
 
----- 
+----
 
 ### Deployment
   
@@ -272,3 +272,4 @@ Interesting tools in this space:
   * [AWS Costs Every Developer Should Know](https://david-codes.hatanian.com/2019/06/09/aws-costs-every-programmer-should-now.html) - describes "current" EU West 1 region EC2 pricing for CPU & RAM.
   * [Spring Framework Annotations](https://springframework.guru/spring-framework-annotations/) - a good list of most (?) annotations & what they do.
   * [Builder pattern vs. Multi-stage builds in Docker](https://blog.alexellis.io/mutli-stage-docker-builds/) - describes how to work with multi-stage builds & the problems they solve.
+  * [Managing RDS Credentials with SecretManager](https://noise.getoto.net/2018/08/30/how-to-use-aws-secrets-manager-to-rotate-credentials-for-all-amazon-rds-database-types-including-oracle/) - describes how to manage auto-rotated credentials for Postgres instances on Amazon RDS.
