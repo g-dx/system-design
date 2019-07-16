@@ -246,6 +246,7 @@ Interesting tools in this space:
   * [Deploying applications with AWS ECS Cluster and ALB](https://dinfratechsource.com/2019/01/20/deploying-applications-with-aws-ecs-cluster-alb-and-auto-scaling-group/) - describes how to use ECS to launch multiple copies of a container behind an ALB.
   * [How to Deploy from GitLab to AWS Fargate](https://webcaptioner.com/blog/2017/12/deploy-from-gitlab-to-aws-fargate/) - describes how to deploy containers on to AWS Fargate using Gitlab CI.
   * [Terraform Collaboration For Everyone](https://www.hashicorp.com/blog/terraform-collaboration-for-everyone) - announces the intention to bring team collaboration features to the free tier ([roadmap is here](https://app.terraform.io/signup?utm_source=blog&utm_campaign=intro_tf_cloud_remote))
+  * [Zero downtime deployments of ASG in AWS](https://medium.com/@endofcake/using-terraform-for-zero-downtime-updates-of-an-auto-scaling-group-in-aws-60faca582664) - describes the limitations of the public API for managing ASGs in AWS & uses a Cloudformation Stack resource in Terraform to work around this.
 
 ##### Testing
 
