@@ -248,6 +248,7 @@ Interesting tools in this space:
   * [Terraform Collaboration For Everyone](https://www.hashicorp.com/blog/terraform-collaboration-for-everyone) - announces the intention to bring team collaboration features to the free tier ([roadmap is here](https://app.terraform.io/signup?utm_source=blog&utm_campaign=intro_tf_cloud_remote))
   * [Zero downtime deployments of ASG in AWS](https://medium.com/@endofcake/using-terraform-for-zero-downtime-updates-of-an-auto-scaling-group-in-aws-60faca582664) - describes the limitations of the public API for managing ASGs in AWS & uses a Cloudformation Stack resource in Terraform to work around this.
   * [Zero downtime updates with Terraform](https://www.hashicorp.com/blog/zero-downtime-updates-with-terraform) - describes how to use the `create_before_destroy` hooks & `provisioner` to ensure newly created instances are healthy.
+  * [Docker deployments using Terraform](https://medium.com/galvanize/docker-deployments-using-terraform-d2bf36ec7bdf) - describes how to use `null_resources` and the `-target` switch to separate service deployments from general infrastructure updates. Applies to AWS ECS but the concepts are equally applicable to EC2 instances.
 
 ##### Testing
 
