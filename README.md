@@ -207,7 +207,7 @@ dynamically by the app on startup.
   * [AutoScale CI Runners](https://about.gitlab.com/2017/11/23/autoscale-ci-runners/) - similar to the article above explaining how to use the Runner in Docker Machine mode with EC2 spot instances to lower costs.
   * [GitLab CI: Deployment & Environments](https://about.gitlab.com/2016/08/26/ci-deployment-and-environments/) - describes how to use Gitlab to perform deployments into various environments. It also discusses how to scale the approach as teams get bigger.
   * [Build Docker images with GitLab CI on AWS ECR](http://www.jademind.com/blog/posts/build-docker-images-with-gitlab-ci-on-aws-ecr/) - 
-
+ * [Debugging Gitlab CI Pipelines Locally](https://medium.com/@otterbahn/debugging-gitlab-ci-pipelines-locally-e2699608f4df) - 
 ----
 
 ### Deployment
@@ -222,6 +222,7 @@ dynamically by the app on startup.
     * If using IaC one the switch is complete & everything is running smoothly simply destroy the old env. Then for the next deployment rebuild it, run smoke tests, perform the load balancer switch, ensure everything is ok & destroy old env. Repeat for every deployment. 
   * [Blue/Green Deployement With a Single Underlying Database](https://techblog.bozho.net/blue-green-deployment/) - outlines working with a single DB under a blue/green deployment model. Advocates a 3 change release model for the DB ensuring backwards compatibility. Suggests uses DNS with a low TTL for the switch.
   * [Blue/Green Deployment With an AWS Application Load Balancer](https://medium.com/@acharya.naveen/blue-green-deployment-with-aws-application-load-balancer-e551cd00d2c9) - describes how to implement blue/green deployment by forwarding traffic to blue or green target group based on the `Host` header value (i.e. `live.poc.com` or `staging.poc.com`). 
+  * [Blue/Green Deployment on Terraform](https://gameanalytics.com/blog/terraform-infrastructure-850-million-monthly-players.html)
 ---- 
 ### Networking
 
